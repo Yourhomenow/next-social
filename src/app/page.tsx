@@ -1,5 +1,6 @@
 import AddPost from "./components/AddPost"
 import Feed from "./components/Feed"
+import RightMenu from "./components/RightMenu"
 import Stories from "./components/Strories"
 
 const Homepage = () => {
@@ -13,7 +14,9 @@ const Homepage = () => {
           <Feed/>
         </div>
       </div>
-      <div className="hidden lg:block w-[30%]">RightMenu</div>
+      <div className="hidden lg:block w-[30%]">
+        <RightMenu/>
+      </div>
     </div>
   )
 }
