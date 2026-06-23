@@ -7,7 +7,7 @@ const FriendRequests = ({userId} : {userId?:string}) => {
       {/* TOP */}
       <div className="">
         <span className="text-gray-500">Friend Request</span>
-        <Link href="/" className="text-blue-500 text-xs">See all</Link>
+        <Link href="/" className="text-blue-500 text-xs"> See all</Link>
       </div>
       {/* USER */}
       <div className="flex items-center justify-between">
