@@ -1,17 +1,17 @@
 import Link from "next/link"
 import ProfileCard from "./ProfileCard"
 import Image from "next/image"
-import Ad from "./Ad"
+import Ad from "../Ad"
 
-const LeftMenu = ({type}:{type:"home" | "profile"}) => {
+const LeftMenu = ({ type }: { type: "home" | "profile" }) => {
   return (
     <div className="flex flex-col gap-6">
-      {type === "home" && <ProfileCard/>}
+      {type === "home" && <ProfileCard />}
       <div className='p-4 bg-white rounded-lg shadow-md text-sm text-gray-500 flex flex-col gap-2'>
-        <Link 
-          href="/" 
+        <Link
+          href="/"
           className="flex items-center gap-4 p-2 rounded-lg hover:bg-slate-100">
-          <Image 
+          <Image
             src="/posts.png"
             alt=""
             width={20}
@@ -21,11 +21,11 @@ const LeftMenu = ({type}:{type:"home" | "profile"}) => {
             My Posts
           </span>
         </Link>
-        <hr className="border-t-1 border-gray-50 w-36 self-center"/>
-        <Link 
-          href="/" 
+        <hr className="border-t-1 border-gray-50 w-36 self-center" />
+        <Link
+          href="/"
           className="flex items-center gap-4 p-2 rounded-lg hover:bg-slate-100">
-          <Image 
+          <Image
             src="/activity.png"
             alt=""
             width={20}
@@ -35,11 +35,11 @@ const LeftMenu = ({type}:{type:"home" | "profile"}) => {
             Activity
           </span>
         </Link>
-        <hr className="border-t-1 border-gray-50 w-36 self-center"/>
-        <Link 
-          href="/" 
+        <hr className="border-t-1 border-gray-50 w-36 self-center" />
+        <Link
+          href="/"
           className="flex items-center gap-4 p-2 rounded-lg hover:bg-slate-100">
-          <Image 
+          <Image
             src="/market.png"
             alt=""
             width={20}
@@ -49,11 +49,11 @@ const LeftMenu = ({type}:{type:"home" | "profile"}) => {
             Marketplace
           </span>
         </Link>
-        <hr className="border-t-1 border-gray-50 w-36 self-center"/>
-        <Link 
-          href="/" 
+        <hr className="border-t-1 border-gray-50 w-36 self-center" />
+        <Link
+          href="/"
           className="flex items-center gap-4 p-2 rounded-lg hover:bg-slate-100">
-          <Image 
+          <Image
             src="/events.png"
             alt=""
             width={20}
@@ -63,11 +63,11 @@ const LeftMenu = ({type}:{type:"home" | "profile"}) => {
             Events
           </span>
         </Link>
-        <hr className="border-t-1 border-gray-50 w-36 self-center"/>
-        <Link 
-          href="/" 
+        <hr className="border-t-1 border-gray-50 w-36 self-center" />
+        <Link
+          href="/"
           className="flex items-center gap-4 p-2 rounded-lg hover:bg-slate-100">
-          <Image 
+          <Image
             src="/albums.png"
             alt=""
             width={20}
@@ -77,11 +77,11 @@ const LeftMenu = ({type}:{type:"home" | "profile"}) => {
             Albums
           </span>
         </Link>
-        <hr className="border-t-1 border-gray-50 w-36 self-center"/>
-        <Link 
-          href="/" 
+        <hr className="border-t-1 border-gray-50 w-36 self-center" />
+        <Link
+          href="/"
           className="flex items-center gap-4 p-2 rounded-lg hover:bg-slate-100">
-          <Image 
+          <Image
             src="/videos.png"
             alt=""
             width={20}
@@ -91,11 +91,11 @@ const LeftMenu = ({type}:{type:"home" | "profile"}) => {
             Videos
           </span>
         </Link>
-        <hr className="border-t-1 border-gray-50 w-36 self-center"/>
-        <Link 
-          href="/" 
+        <hr className="border-t-1 border-gray-50 w-36 self-center" />
+        <Link
+          href="/"
           className="flex items-center gap-4 p-2 rounded-lg hover:bg-slate-100">
-          <Image 
+          <Image
             src="/news.png"
             alt=""
             width={20}
@@ -105,11 +105,11 @@ const LeftMenu = ({type}:{type:"home" | "profile"}) => {
             News
           </span>
         </Link>
-        <hr className="border-t-1 border-gray-50 w-36 self-center"/>
-        <Link 
-          href="/" 
+        <hr className="border-t-1 border-gray-50 w-36 self-center" />
+        <Link
+          href="/"
           className="flex items-center gap-4 p-2 rounded-lg hover:bg-slate-100">
-          <Image 
+          <Image
             src="/courses.png"
             alt=""
             width={20}
@@ -119,11 +119,11 @@ const LeftMenu = ({type}:{type:"home" | "profile"}) => {
             Courses
           </span>
         </Link>
-        <hr className="border-t-1 border-gray-50 w-36 self-center"/>
-        <Link 
-          href="/" 
+        <hr className="border-t-1 border-gray-50 w-36 self-center" />
+        <Link
+          href="/"
           className="flex items-center gap-4 p-2 rounded-lg hover:bg-slate-100">
-          <Image 
+          <Image
             src="/lists.png"
             alt=""
             width={20}
@@ -133,11 +133,11 @@ const LeftMenu = ({type}:{type:"home" | "profile"}) => {
             Lists
           </span>
         </Link>
-        <hr className="border-t-1 border-gray-50 w-36 self-center"/>
-        <Link 
-          href="/" 
+        <hr className="border-t-1 border-gray-50 w-36 self-center" />
+        <Link
+          href="/"
           className="flex items-center gap-4 p-2 rounded-lg hover:bg-slate-100">
-          <Image 
+          <Image
             src="/settings.png"
             alt=""
             width={20}
@@ -147,9 +147,9 @@ const LeftMenu = ({type}:{type:"home" | "profile"}) => {
             Settings
           </span>
         </Link>
-        <hr className="border-t-1 border-gray-50 w-36 self-center"/>
+        <hr className="border-t-1 border-gray-50 w-36 self-center" />
       </div>
-      <Ad size="sm"/>
+      <Ad size="sm" />
     </div>
   )
 }

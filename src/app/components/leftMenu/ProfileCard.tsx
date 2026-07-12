@@ -1,6 +1,7 @@
 import prisma from "@/lib/client"
 import { auth } from "@clerk/nextjs/server"
 import Image from "next/image"
+import Link from "next/link";
 
 const ProfileCard = async () => {
 
@@ -43,7 +44,7 @@ const ProfileCard = async () => {
         />
       </div>
       <div className="h-20 flex flex-col gap-2 items-center">
-        <span className="font-semibold">Miguel Mikky</span>
+        <span className="font-semibold">{(user.name && user.surname) ? user.name + " " + user.surname : user.username}</span>
         <div className="flex items-center gap-4">
           <div className="flex">
             <Image 
@@ -69,12 +70,14 @@ const ProfileCard = async () => {
             />
           </div>
           <span className="text-xs text-gray-500">
-            500 followers
+            {user._count.followers} followers
           </span>
         </div>
-        <button className="bg-blue-500 text-white text-xs p-2 rounded-md">
-          My Profile
-        </button>
+        <Link href={`/profile/${user.username}`}>
+          <button className="bg-blue-500 text-white text-xs p-2 rounded-md">
+            My Profile
+          </button>
+        </Link>
       </div>
     </div>
   )
